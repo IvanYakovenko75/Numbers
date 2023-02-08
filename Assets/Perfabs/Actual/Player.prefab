@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6581864935188625183}
   - component: {fileID: 1911740234982729607}
   m_Layer: 0
-  m_Name: BoardGamePiece_Green
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
