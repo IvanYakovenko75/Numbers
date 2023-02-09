@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public GameObject Player;
+    [SerializeField] private GameObject Player;
+    [SerializeField] private GameObject TileWin;
+    [SerializeField] private GameObject TileStart;
+    [SerializeField] private GameObject GridCells;
 
+
+    
     void Start()
     {
-        Instantiate(Player, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(TileStart, new Vector3(-5, -2, -1), Quaternion.identity);
+        Instantiate(TileWin, new Vector3(5, 8, -1), Quaternion.identity);
     }
 
     void Update()
     {
         
+    }
+
+    public void TapToStart()
+    {
+        Instantiate(Player, new Vector3(-5, -2, -2), Quaternion.identity);
     }
 }
