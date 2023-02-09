@@ -11,17 +11,16 @@ public class GirdGenerator : MonoBehaviour
 
         private void GenerateGrid()
     {
-        var _cellsize = _tilePrefab.GetComponent<SpriteRenderer>().bounds.size;
+        //var _cellsize = _tilePrefab.GetComponent<SpriteRenderer>().bounds.size;
         for (int x = 0; x < _gridSize.x; x++)
         { for (int y = 0; y < _gridSize.y; y++)
             {
                 var position = new Vector2(x * (_gridSize.x + _offset), y * (_gridSize.y + _offset));
                 var cell = Instantiate(_tilePrefab, position, Quaternion.identity, _parent);
-                cell.name = $"Tile (x), (y)";
+                cell.name = $" X: {x},Y: {y}";
             }
         }
     }
-
 
     void Start()
     {

@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
     public GameObject MovePlate;
 
     //positions
-    private int xBoard = -1;
-    private int yBoard = -1;
+    //private int xBoard = -1;
+    //private int yBoard = -1;
 
     //public float speed = 5f;
 
